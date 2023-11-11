@@ -2,8 +2,9 @@
 title: "Tyler, the Creator Song Analysis"
 format: 
   dashboard:
-    logo: logo.jpg
-    theme: "theme.scss"
+    logo: "logo.jpg"
+    theme: 
+    - "theme.scss"
 ---
 
 ```{ojs}
@@ -163,7 +164,7 @@ Plot.plot({
        Plot.dot(filtered_songs, {x: filters.selectX, 
                      y: filters.selectY,
                      title: "track",
-                     fill: "#3A5743",
+                     fill: "#3A9DC7",
                      stroke: "white",
                      opacity: 0.9,
                      r: 6})
