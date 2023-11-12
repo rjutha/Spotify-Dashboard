@@ -1,5 +1,5 @@
 ---
-title: "Tyler, the Creator Song Analysis"
+title: "Tyler the Creator - Song Analysis"
 format: 
   dashboard:
     logo: "logo.jpg"
@@ -155,7 +155,6 @@ viewof filters = (
 ```
 
 ```{ojs}
-  
 Plot.plot({
   grid: true,
   marginBottom:20,
@@ -170,7 +169,6 @@ Plot.plot({
                      r: 6})
   ]
 })
-
 ```
 :::
 
@@ -185,7 +183,6 @@ Plot.plot({
 db = DuckDBClient.of({ 
 	songs: filtered_songs_album,
 })
-
 ```
 
 ```{ojs}
@@ -228,7 +225,6 @@ function heatmap(value, minValue, maxValue) {
   `;
 }
 
-
 function getColorFromScale(scale) {
 
   var colors = d3.schemeGnBu[7]
@@ -264,7 +260,6 @@ function hexToRgb(hex) {
   // Return the color in RGB format
   return "rgb(" + color.join(",") + ")";
 }
-
 ```
 
 ::: {.card title="Songs"}
